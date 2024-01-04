@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "758127067101",
+    "project_id": "aountech-833ca",
+    "storage_bucket": "aountech-833ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758127067101:android:a9e97e7c0310e10a9f8034",
+        "android_client_info": {
+          "package_name": "com.aoun_tech"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD74qqFjjRjsmub8gMbCH8JZ_e7OpkRHIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
