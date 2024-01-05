@@ -1,11 +1,18 @@
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
 import Icon from "react-native-vector-icons/FontAwesome";
-import { onGoogleButtonPress } from "@/utils/export";
+import { signInWithGoogle } from "@/utils/export";
+import { useNavigation } from "@react-navigation/native";
+import { useDispatch } from "react-redux";
 
 const GoogleSigning = () => {
+  const navigation = useNavigation();
+  const dispatch = useDispatch();
   return (
-    <TouchableOpacity onPress={onGoogleButtonPress} activeOpacity={0.7}>
+    <TouchableOpacity
+      onPress={() => signInWithGoogle(navigation,dispatch)}
+      activeOpacity={0.7}
+    >
       <View style={styles.btnView}>
         <Icon
           name="google"
@@ -13,7 +20,7 @@ const GoogleSigning = () => {
           color="white"
           style={{ marginRight: 10 }}
         />
-        <Text style={styles.textStyle}>Sign in with Google</Text>
+        <Text style={styles.textStyle}>Sign in </Text>
       </View>
     </TouchableOpacity>
   );
